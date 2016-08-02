@@ -1,0 +1,173 @@
+<section>
+
+<!--  Form of categroy -->
+      <h3>{{user._id ? 'Edit User' : 'Create User'}}</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="login-form-container" class="lang_en">
+     <div id="login-logo"></div>
+       <div id="animate-wrapper"></div>
+          <form name="userForm" class="form-horizontal" ng-submit="saveUser(userForm.$valid)" novalidate>
+            <div class="row">
+              <div class="col-md-4" show errors>
+                <label class="control-label " for="FirstName">
+                FirstName
+                </label>
+                <input name="firstName" type="text" ng-model="user.firstName" id="firstName" class="form-control" placeholder="firstName" required>
+              </div>
+              <div class="col-md-4">
+                <label class="control-label " for="LastName">
+                LastName
+                </label>
+                <input name="lastName" type="text" ng-model="user.lastName" id="lastName" class="form-control" placeholder="lastName" required>
+              </div>
+              <div class="col-md-4" ng-hide="user._id">
+                <label class="control-label " for="email">
+                 Email
+                </label>
+                <input name="email" type="text" ng-model="user.email" id="email" class="form-control" placeholder="email" ng-required="!user._id">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label class="control-label " for="Title">
+                 District
+                </label>
+                <select class="form-control" id="districts" name="districts"ng-model="user.district">
+                  <option value="" disabled selected>Select District</option>
+                  <option ng-repeat="option in allDistricts" value="{{option._id}}">{{option.districtName}}</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="control-label " for="username">
+                 Username
+                </label>
+                <input name="username" type="text" ng-model="user.username" id="username" class="form-control" placeholder="Username" required>
+              </div>
+              <div class="col-md-4" ng-hide="user._id">
+                <label class="control-label " for="password">
+                 Password
+                </label>
+                <input name="password" type="password" ng-model="user.password"
+                  id="Password" class="form-control"
+                  placeholder="Form Password" ng-required="!user._id">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label class="control-label " for="password">
+                  Available Role
+                </label>
+                <select name="from[]" id="multiselect" class="form-control" size="8" id="userRoles" name="userRoles" multiple="multiple">
+                  <option ng-repeat="option in allRoles" value="{{option.name}}">{{option.displayName}}</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+              <label class="control-label " for="password">
+
+                </label>
+                  <button type="button" id="multiselect_rightAll" class="btn btn-block"><i class="glyphicon glyphicon-forward"></i></button>
+                  <button type="button" id="multiselect_rightSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                  <button type="button" id="multiselect_leftSelected" class="btn btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                  <button type="button" id="multiselect_leftAll" class="btn btn-block"><i class="glyphicon glyphicon-backward"></i></button>
+              </div>
+
+              <div class="col-md-4">
+                <label class="control-label " for="password">
+                  Selected Role
+                </label>
+                <select name="to[]" id="multiselect_to" class="form-control" ng-model="user.roles" size="8" multiple="multiple" selected></select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label class="control-label " for="read">
+                 Read&nbsp
+                </label>
+                <input type="checkbox" ng-model="user.read" name="read" >
+              </div>
+              <div class="col-md-4">
+                <label class="control-label " for="write">
+                 Write&nbsp
+                </label>
+                <input type="checkbox" ng-model="user.write" ng-click="permission()" name="write" ng-disabled="user.username===authentication.user.username">
+              </div>
+              <div class="col-md-4">
+                <label class="control-label " for="canCreateUser">
+                 User Role&nbsp
+                </label>
+                <input type="checkbox" ng-model="user.canCreateUser" ng-click="permission()" name="canCreateUser" ng-disabled="user.username===authentication.user.username">
+              </div>
+            </div>
+            <div>
+            <button type="submit" class="btn btn-primary">{{user._id ? 'Update' : 'Create'}}
+            </button>
+          </div><br/>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- end of Form of categroy -->
+
+<!-- list of Categories -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <span class="lead">Users</span>
+        </div>
+          <div class="page-header">
+            <div class="tablecontainer">
+              <table class="table table-bordered" datatable="ng">
+                <thead>
+                  <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>District</th>
+                    <th width="20%"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="user in allUsers"  >
+                    <td><span ng-bind="user.username"></span></td>
+                    <td><span ng-bind="user.email"></span></td>
+                    <td><span ng-bind="user.roles"></span></td>
+                    <td><span ng-bind="user.district.districtName"></span></td>
+                    <td>
+                      <a class="btn btn-primary" ng-click="editUser(user)" >
+                        <i class="glyphicon glyphicon-edit"></i>
+                      </a>
+                      <a class="btn btn-primary-delete" data-toggle="modal" ng-disabled="user.username===authentication.user.username" ng-click="user.username===authentication.user.username || openDeleteModal(user)">
+                        <i class="glyphicon glyphicon-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="deleteConfirmModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <center><h2>Are you sure wanna Delete?</h2></center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger"  ng-click="deleteUser()" >Delete</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- end of List of forms -->
+
+
+</section>

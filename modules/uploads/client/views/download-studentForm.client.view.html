@@ -1,0 +1,39 @@
+<section>
+  <div class="page-header">
+  </div>
+        <section>
+         <div class="container-fluid">
+            <div class="row">
+              <!--<form name="vm.studentFormForm" class="form-horizontal" ng-submit="vm.saveStudentForm(vm.studentFormForm.$valid)" novalidate>-->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group ">
+                   <label class="control-label " for="select">
+                    Select Category
+                   </label>
+                   <select type="text" class="select form-control" id="category" name="category" ng-change="getRelevantForms()"  ng-model="vm.studentForm.categoryId">
+                     <option ng-repeat="cat in vm.allCategories" value="{{cat._id}}">{{cat.categoryName}}</option>
+                   </select>
+                  </div>
+              </div>
+              <div ng-show="vm.isForms">
+              <div class="col-md-6 col-md-offset-2 col-sm-6 col-xs-12">
+                <div class="form-group ">
+                 <div class="panel panel-primary">
+                  <div class="panel-heading"> Choose The Form</div>
+                   <div class="panel-body">
+                     <fieldset id="group2"><div id="showRelForms"></div></fieldset>
+                </div>
+              </div>
+              </div>
+              <!--<a ng-href="http:\\localhost:3000/modules/uploads/client/views/file.xlsx" >Dowd</a>-->
+               <!--<a ng-href="{{ downloadForm() }} " download>Download</a>-->
+              <button type="button" class="btn btn-primary" data-student-id="" ng-click="downloadForm()" >Download</button>
+            </div>
+              <!--</form>-->
+            </div>
+
+
+           </div>
+          </div>
+  </section>
+    </section>

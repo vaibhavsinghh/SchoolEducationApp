@@ -1,0 +1,63 @@
+<section>
+  <div class="page-header">
+    <h3>{{vm.category._id ? 'Edit Category' : 'Create Category'}}</h3>
+  </div>
+<!--  Form of categroy -->
+
+      <form name="vm.categoryForm" ng-submit="vm.saveCategory(vm.categoryForm.$valid)" novalidate>
+        <div class="form-group ">
+          <label>Name: </label>
+          <input name="categoryName" type="text" ng-model="vm.category.categoryName" id="categoryName" class="form-control" placeholder="Form Category Name" required>
+        </div>
+        <div class="form-group ">
+          <label>District: </label>
+          <select class="select form-control" id="districts" name="districts"ng-model="vm.category.districtId">
+           <option value="" disabled selected>Select District</option>
+           <option ng-repeat="option in vm.allDistricts" value="{{option._id}}">{{option.districtName}}</option>
+          </select>
+        </div>
+        <div class="form-group" style="vertical-align:bottom">
+           <button type="submit" class="btn btn-primary">{{vm.category._id ? 'Update' : 'Create'}}</button>
+        </div>
+
+      </form>
+
+<!-- end of Form of categroy -->
+
+<!-- list of Categories -->
+<div class="panel panel-default">
+             <div class="panel-heading"><span class="lead">Categories</span></div>
+             <div class="page-header">
+             <div class="tablecontainer">
+                 <table class="table table-bordered" datatable="ng">
+                               <thead>
+                                   <tr>
+                                       <th>Category Name</th>
+                                       <th>District Name</th>
+                                       <th width="20%"></th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+                                   <tr ng-repeat="cat in vm.allCategories"  >
+                                       <td><span ng-bind="cat.categoryName"></span></td>
+                                       <td><span ng-bind="cat.district.districtName"></span></td>
+                                       <td>
+                                      <a class="btn btn-primary" ng-click="editCategory(cat)" >
+                                         <i class="glyphicon glyphicon-edit"></i>
+                                       </a>
+                                     <a class="btn btn-primary-delete"  ng-click="deleteCategory(cat)">
+                                         <i class="glyphicon glyphicon-trash"></i>
+                                       </a>
+                                       </td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                   </div>
+<!-- end of List of forms -->
+<!--
+<div class="col-md-12">
+<div id="editor"></div>
+</div> -->
+
+</section>

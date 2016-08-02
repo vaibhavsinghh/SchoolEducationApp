@@ -1,0 +1,85 @@
+<section>
+  <div class="page-header">
+    <h3>{{vm.district._id ? 'Edit District' : 'Create District'}}</h3>
+  </div>
+<!--  Form of student -->
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-6">
+            <form name="vm.districtForm" class="form-horizontal" ng-submit="vm.saveDistrict(vm.districtForm.$valid)" novalidate>
+              <div class="row">
+                <div class="form-group col-md-12" show errors>
+                  <label class="control-label" for="name">District Name</label>
+                  <input name="districtName" type="text" ng-model="vm.district.districtName" id="districtName" class="form-control" placeholder="Enter District Name" required>
+                </div>
+                <!-- <div class="form-group col-md-4" show errors>
+                  <button type="submit" class="btn btn-primary">{{vm.district._id ? 'Update' : 'Create'}}</button>
+                </div> -->
+              </div>
+              <div class="form-group">
+              <button type="submit" class="btn btn-primary">{{vm.district._id ? 'Update' : 'Create'}}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<!-- end of Form of student -->
+<!-- list of student -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="lead">Districts</span>
+      </div>
+        <div class="page-header">
+          <div class="tablecontainer">
+            <table class="table table-bordered" datatable="ng">
+                <thead>
+                    <tr>
+                        <th>District Name</th>
+                        <th>CreatedOn</th>
+                        <th>CreatedBy</th>
+                        <th>UpdatedOn</th>
+                        <th>UpdatedBy</th>
+                        <th width="20%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="district in vm.allDistricts"  >
+                      <td><span ng-bind="district.districtName"></span></td>
+                      <td><span ng-bind="district.createdAt | date:'MM/dd/yyyy'"></span></td>
+                      <td><span ng-bind="district.user.firstName"></span></td>
+                      <td><span ng-bind="district.updatedAt | date:'MM/dd/yyyy'"></span></td>
+                      <td><span ng-bind="district.updatedBy.firstName| date:'MM/dd/yyyy'"></span></td>
+                      <td>
+                        <a class="btn btn-primary" ng-click="editDistrict(district)" >
+                        <i class="glyphicon glyphicon-edit"></i>
+                       </a>
+                       <a class="btn btn-primary-delete" data-toggle="modal" ng-click="openDeleteModal(district)">
+                        <i class="glyphicon glyphicon-trash"></i>
+                       </a>
+                      </td>
+                  </tr>
+               </tbody>
+            </table>
+          </div>
+       </div>
+    </div>
+    <div id="deleteConfirmModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <center><h2>Are sure Wanna Delete?</h2></center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger"  ng-click="deleteDistrict()" >Delete</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</section>

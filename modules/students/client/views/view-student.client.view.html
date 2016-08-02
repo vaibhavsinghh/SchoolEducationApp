@@ -1,0 +1,147 @@
+<section>
+  <div class="page-header">
+  </div>
+    <div class="panel panel-default">
+      <div class="panel-heading"><span class="lead">Student Profile</span>
+        <span class= "lead pull-right">
+        <button type="button" data-toggle="modal" ng-click="openGenStudentFormModal(selectedStudent)"  class="btn btn-info">Student Data Collection</button>
+        </span>
+      </div>
+        <div class="tablecontainer">
+          <table class="table table-bordered">
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                  <td><span><b>Name : </b></span></td>
+                  <td><span ng-bind="selectedStudent.studentName"></span></td>
+                  <td><span><b>Ethnicity : </b></span></td>
+                  <td><span ng-bind="selectedStudent.ethnicity"></span></td>
+                </tr>
+                <tr>
+                  <td><span><b>Gender :</b> </span></td>
+                  <td><span ng-bind="selectedStudent.gender"></span></td>
+                  <td><span><b>City : </b></span></td>
+                  <td><span ng-bind="selectedStudent.city"></span></td>
+                </tr>
+           </tbody>
+        </table>
+      </div>
+    </div>
+
+<!--Existing StudentForms of a Particular Student-->
+<div class="panel panel-default">
+   <div class="panel-heading"><span class="lead">Student Forms</span></div>
+    <div class="tablecontainer">
+       <table class="table table-bordered" datatable="ng">
+         <thead>
+             <tr>
+                 <th>Student Name</th>
+                 <th>Category Name</th>
+                 <th>Form Name</th>
+                 <th width="10%"></th>
+              </tr>
+         </thead>
+         <tbody>
+             <tr ng-repeat="sf in vm.allStudentForms"  >
+                 <td><span ng-bind="sf.student.studentName"></span></td>
+                 <td><span ng-bind="sf.form.category.categoryName"></span></td>
+                 <td><span ng-bind="sf.form.formName"></span></td>
+                 <td>
+                   <a class="btn btn-primary" data-toggle="modal" ng-click="openViewStudentFormModal(sf)">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                   </a>
+                </td>
+             </tr>
+         </tbody>
+     </table>
+ </div>
+</div>
+<!--End of Existing StudentForms of a Particular Student-->
+
+<div id="generateStudentFormModal" class="modal fade" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title"></h4>
+    </div>
+    <div class="modal-body">
+      <section>
+       <div class="container-fluid">
+          <div class="row">
+            <!--<form name="vm.studentFormForm" class="form-horizontal" ng-submit="vm.saveStudentForm(vm.studentFormForm.$valid)" novalidate>-->
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="form-group ">
+                 <label class="control-label " for="select">
+                  Select Category
+                 </label>
+                 <select type="text" class="select form-control" id="category" name="category" ng-change="getRelevantForms()"  ng-model="vm.studentForm.categoryId">
+                   <option ng-repeat="cat in vm.allCategories" value="{{cat._id}}">{{cat.categoryName}}</option>
+                 </select>
+                </div>
+            </div>
+            <div ng-show="vm.isForms">
+            <div class="col-md-6 col-md-offset-2 col-sm-6 col-xs-12">
+              <div class="form-group ">
+               <div class="panel panel-primary">
+                <div class="panel-heading"> Choose The Form</div>
+                 <div class="panel-body">
+                   <fieldset id="group2"><div id="showRelForms"></div></fieldset>
+              </div>
+            </div>
+            </div>
+          </div>
+            <!--</form>-->
+          </div>
+         </div>
+        </div>
+      </section>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-student-id="" ng-click="getFormContent()" >Open</button>
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+    </div>
+  </div>
+</div>
+</div>
+
+                <!--     end of genFormmodal -->
+
+                <!--  show Form content modal-->
+
+                <div id="saveStudentFormModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"><center> Fill The Form </center></h4>
+                      </div>
+                      <div class="modal-body">
+                        <section>
+                        <form name="vm.studentFormForm" id="vm.studentFormForm" class="form-horizontal" ng-submit="vm.saveStudentForm()" novalidate>
+
+                          <center><div id="formContent">Studen Form Will be here</div></center>
+                            <div class="form-group">
+                             <div>
+                               <!--<button type="submit" class="btn btn-primary">Create Student Form</button>-->
+                             </div>
+                            </div>
+
+                        </form>
+
+                        </section>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-studentForm-id="" ng-click="vm.downloadStudentForm()" >Download</button>
+                        <button type="button" class="btn btn-primary" data-studentForm-id="" ng-click="vm.saveStudentForm()" >Save</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="closeModal()">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+</section>

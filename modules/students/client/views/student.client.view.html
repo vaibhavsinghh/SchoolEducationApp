@@ -1,0 +1,120 @@
+<section>
+  <div class="page-header">
+  </div>
+<!--  Form of student -->
+      <!--    <div class="bootstrap-iso">
+           <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5 col-sm-6 col-xs-12">
+              <form name="vm.studentForm" class="form-horizontal" ng-submit="vm.saveStudent(vm.studentForm.$valid)" novalidate>
+
+               <div class="form-group ">
+                <label class="control-label " for="studentName">
+                 Student Name
+                </label>
+                <input name="studentName" type="text" ng-model="vm.student.studentName" id="studentName" class="form-control" placeholder="Enter Student Name" required>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="ethnicity">
+                 Student Ethnicity
+                </label>
+                <input name="ethnicity" type="text" ng-model="vm.student.ethnicity" id="ethnicity" class="form-control" placeholder="Enter Student Ethnicity" required>
+               </div>
+                <div class="form-group ">
+                  <label class="control-label " for="school">
+                   Student School
+                  </label>
+                 <select class="select form-control" id="schools" name="schools"ng-model="vm.student.schoolId">
+                   <option value="" disabled selected>Select School</option>
+                   <option ng-repeat="option in vm.allSchools" value="{{option._id}}">{{option.schoolName}}</option>
+                 </select>
+              </div>
+               <div class="form-group ">
+                <label class="control-label " for="gender">
+                 Gender
+                </label>
+                <input name="gender" type="text" ng-model="vm.student.gender" id="gender" class="form-control" placeholder="Enter Student Gender" required>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="city">
+                 City
+                </label>
+                <input name="city" type="text" ng-model="vm.student.city" id="city" class="form-control" placeholder="Enter Student City" required>
+               </div>
+               <div class="form-group">
+                <div>
+                  <button type="submit" class="btn btn-primary">{{vm.student._id ? 'Update' : 'Create'}}</button>
+                </div>
+               </div>
+             </div>
+              </form>
+            </div>
+          </div>
+        </div>-->
+
+
+<!-- end of Form of student -->
+<!-- list of student -->
+
+  <div class="panel panel-default">
+     <div class="panel-heading"><span class="lead">Students</span></div>
+     <div class="tablecontainer">
+         <table class="table table-bordered row-border" datatable="ng">
+             <thead>
+                 <tr>
+                     <th width="20%">Student Name</th>
+                     <th width="10%">Gender</th>
+                     <th width="10%">Ethnicity</th>
+                     <th width="10%">City</th>
+                     <th width="10%">District</th>
+                     <th width="10%">School</th>
+                     <th width="10%">View Profile</th>
+                 </tr>
+             </thead>
+              <tbody>
+                 <tr ng-repeat="student in vm.allStudents"  >
+                     <td><span ng-bind="student.studentName"></span></td>
+                     <td><span ng-bind="student.ethnicity"></span></td>
+                     <td><span ng-bind="student.gender"></span></td>
+                     <td><span ng-bind="student.city"></span></td>
+                     <td><span ng-bind="student.district.districtName"></span></td>
+                     <td><span ng-bind="student.school.schoolName"></span></td>
+                     <td>
+                       <a class="btn btn-primary"  ng-click="viewStudent(student)">
+                        <i class="glyphicon glyphicon-eye-open"></i>
+                       </a>
+                     </td>
+                 </tr>
+             </tbody>
+         </table>
+       </div>
+    </div>
+
+
+
+              <!--  <div ng-show="vm.student.show">
+                   <div class="panel panel-primary">
+                    <div class="panel-heading"><span class="lead">Student Profile</span><span class= "lead pull-right"><button type="button" ng-click="genStudentForm(vm.student)" class="btn btn-info">Generate Student form</button></span></div>
+                      <div class="tablecontainer">
+                        <table class="table table-bordered">
+                          <thead>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                <td><span><b>Name : </b></span></td>
+                                <td><span ng-bind="vm.student.studentName"></span></td>
+                                <td><span><b>Ethnicity : </b></span></td>
+                                <td><span ng-bind="vm.student.ethnicity"></span></td>
+                              </tr>
+                              <tr>
+                                <td><span><b>Gender :</b> </span></td>
+                                <td><span ng-bind="vm.student.gender"></span></td>
+                                <td><span><b>City : </b></span></td>
+                                <td><span ng-bind="vm.student.city"></span></td>
+                              </tr>
+                         </tbody>
+                      </table>
+                    </div>
+                </div>
+              </div>-->
+</section>

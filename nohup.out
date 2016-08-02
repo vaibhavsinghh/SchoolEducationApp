@@ -1,0 +1,646 @@
+
++ Error: NODE_ENV is not defined! Using default development environment
+
+--
+Smartdata - Development Environment
+Environment:			development
+Port:				3000
+Database:				mongodb://localhost/smartdata_v1
+App version:			0.4.2
+MEAN.JS version:			0.4.2
+--
+hi m here also
+http
+10.10.1.245
+/
+undefined
+[0mGET / [32m200 [0m240.581 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/bootstrap/dist/css/yeti.bootstrap.min.css
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/datatables/media/css/jquery.dataTables.css
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/core/client/css/core.css
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/css/users.css
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/jquery/dist/jquery.min.js
+undefined
+[0mGET /lib/datatables/media/css/jquery.dataTables.css [32m200 [0m62.450 ms - -[0m
+[0mGET /modules/users/client/css/users.css [32m200 [0m74.275 ms - 832[0m
+[0mGET /lib/bootstrap/dist/css/yeti.bootstrap.min.css [32m200 [0m82.347 ms - -[0m
+[0mGET /modules/core/client/css/core.css [32m200 [0m83.134 ms - 657[0m
+[0mGET /lib/jquery/dist/jquery.min.js [32m200 [0m60.482 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/populate-form/jquery.populate.js
+undefined
+[0mGET /lib/populate-form/jquery.populate.js [32m200 [0m16.858 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/populate-form/populate-page-functions.js
+undefined
+[0mGET /lib/populate-form/populate-page-functions.js [32m200 [0m5.857 ms - 287[0m
+hi m here also
+http
+10.10.1.245
+/lib/jquery-datatables/jquery.dataTables.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/angular/angular.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/angular-datatables/dist/angular-datatables.min.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/angular-resource/angular-resource.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/angular-animate/angular-animate.js
+undefined
+[0mGET /lib/angular-datatables/dist/angular-datatables.min.js [32m200 [0m13.152 ms - -[0m
+[0mGET /lib/angular-resource/angular-resource.js [32m200 [0m15.370 ms - -[0m
+[0mGET /lib/jquery-datatables/jquery.dataTables.js [32m200 [0m2.364 ms - -[0m
+[0mGET /lib/angular-animate/angular-animate.js [32m200 [0m26.291 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/angular-messages/angular-messages.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/angular-ui-router/release/angular-ui-router.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/angular-ui-utils/ui-utils.js
+undefined
+[0mGET /lib/angular-messages/angular-messages.js [32m200 [0m15.957 ms - -[0m
+[0mGET /lib/angular-ui-utils/ui-utils.js [32m200 [0m19.413 ms - -[0m
+[0mGET /lib/angular-ui-router/release/angular-ui-router.js [32m200 [0m6.252 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/angular-bootstrap/ui-bootstrap-tpls.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/angular-file-upload/angular-file-upload.js
+undefined
+[0mGET /lib/angular-file-upload/angular-file-upload.js [32m200 [0m14.752 ms - -[0m
+[0mGET /lib/angular-bootstrap/ui-bootstrap-tpls.js [32m200 [0m3.658 ms - -[0m
+[0mGET /lib/angular/angular.js [32m200 [0m18.459 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/angular-file-saver/dist/angular-file-saver.bundle.min.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/angular-file-saver/dist/angular-file-saver.min.js
+undefined
+[0mGET /lib/angular-file-saver/dist/angular-file-saver.bundle.min.js [32m200 [0m15.743 ms - -[0m
+[0mGET /lib/angular-file-saver/dist/angular-file-saver.min.js [32m200 [0m22.851 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/file-saver.js/FileSaver.js
+undefined
+[0mGET /lib/file-saver.js/FileSaver.js [32m200 [0m10.481 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/js/Blob.js
+undefined
+[0mGET /lib/js/Blob.js [32m200 [0m2.462 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/owasp-password-strength-test/owasp-password-strength-test.js
+undefined
+[0mGET /lib/owasp-password-strength-test/owasp-password-strength-test.js [32m200 [0m3.016 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/lib/js/multiselect.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/bootstrap/dist/js/bootstrap.min.js
+undefined
+hi m here also
+http
+10.10.1.245
+/lib/ckeditor/ckeditor.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/core/client/app/config.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/core/client/app/init.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/core/client/core.client.module.js
+undefined
+[0mGET /lib/js/multiselect.js [32m200 [0m2.702 ms - -[0m
+[0mGET /modules/core/client/core.client.module.js [32m200 [0m20.355 ms - 276[0m
+[0mGET /modules/core/client/app/config.js [32m200 [0m28.693 ms - 888[0m
+[0mGET /modules/core/client/app/init.js [32m200 [0m29.222 ms - -[0m
+[0mGET /lib/bootstrap/dist/js/bootstrap.min.js [32m200 [0m54.056 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/districts/client/districts.client.module.js
+undefined
+[0mGET /modules/districts/client/districts.client.module.js [32m200 [0m11.356 ms - 116[0m
+[0mGET /lib/ckeditor/ckeditor.js [32m200 [0m19.638 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/forms/client/forms.client.module.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/reports/client/reports.client.module.js
+undefined
+[0mGET /modules/reports/client/reports.client.module.js [32m200 [0m10.377 ms - 98[0m
+[0mGET /modules/forms/client/forms.client.module.js [32m200 [0m13.933 ms - 112[0m
+hi m here also
+http
+10.10.1.245
+/modules/roles/client/roles.client.module.js
+undefined
+[0mGET /modules/roles/client/roles.client.module.js [32m200 [0m3.607 ms - 339[0m
+hi m here also
+http
+10.10.1.245
+/modules/schools/client/schools.client.module.js
+undefined
+[0mGET /modules/schools/client/schools.client.module.js [32m200 [0m6.732 ms - 114[0m
+hi m here also
+http
+10.10.1.245
+/modules/students/client/students.client.module.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/uploads/client/uploads.client.module.js
+undefined
+[0mGET /modules/students/client/students.client.module.js [32m200 [0m3.735 ms - 170[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/users.client.module.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/core/client/config/core-admin.client.menus.js
+undefined
+[0mGET /modules/uploads/client/uploads.client.module.js [32m200 [0m13.392 ms - 121[0m
+[0mGET /modules/users/client/users.client.module.js [32m200 [0m4.717 ms - 303[0m
+[0mGET /modules/core/client/config/core-admin.client.menus.js [32m200 [0m3.574 ms - 238[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/config/core-admin.client.routes.js
+undefined
+[0mGET /modules/core/client/config/core-admin.client.routes.js [32m200 [0m2.528 ms - 332[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/config/core.client.routes.js
+undefined
+[0mGET /modules/core/client/config/core.client.routes.js [32m200 [0m2.283 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/controllers/body.client.controller.js
+undefined
+[0mGET /modules/core/client/controllers/body.client.controller.js [32m200 [0m2.487 ms - 481[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/controllers/header.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/core/client/controllers/home.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/core/client/directives/show-errors.client.directives.js
+undefined
+[0mGET /modules/core/client/controllers/header.client.controller.js [32m200 [0m8.969 ms - 678[0m
+[0mGET /modules/core/client/controllers/home.client.controller.js [32m200 [0m7.966 ms - 280[0m
+[0mGET /modules/core/client/directives/show-errors.client.directives.js [32m200 [0m7.526 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/services/interceptors/auth.interceptor.client.service.js
+undefined
+[0mGET /modules/core/client/services/interceptors/auth.interceptor.client.service.js [32m200 [0m2.945 ms - 630[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/services/menus.client.service.js
+undefined
+[0mGET /modules/core/client/services/menus.client.service.js [32m200 [0m2.661 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/services/socket.io.client.service.js
+undefined
+[0mGET /modules/core/client/services/socket.io.client.service.js [32m200 [0m2.642 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/districts/client/config/districts.client.config.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/districts/client/config/districts.client.routes.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/districts/client/controllers/districts.client.controller.js
+undefined
+[0mGET /modules/districts/client/config/districts.client.config.js [32m200 [0m13.078 ms - 526[0m
+[0mGET /modules/districts/client/config/districts.client.routes.js [32m200 [0m3.929 ms - -[0m
+[0mGET /modules/districts/client/controllers/districts.client.controller.js [32m200 [0m3.810 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/districts/client/services/districts.client.service.js
+undefined
+[0mGET /modules/districts/client/services/districts.client.service.js [32m200 [0m2.279 ms - 421[0m
+hi m here also
+http
+10.10.1.245
+/modules/forms/client/config/forms.client.config.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/forms/client/config/forms.client.routes.js
+undefined
+[0mGET /modules/forms/client/config/forms.client.config.js [32m200 [0m14.516 ms - 697[0m
+[0mGET /modules/forms/client/config/forms.client.routes.js [32m200 [0m4.966 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/forms/client/controllers/category.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/forms/client/controllers/forms.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/forms/client/services/forms.client.service.js
+undefined
+[0mGET /modules/forms/client/controllers/category.client.controller.js [32m200 [0m3.235 ms - -[0m
+[0mGET /modules/forms/client/controllers/forms.client.controller.js [32m200 [0m4.209 ms - -[0m
+[0mGET /modules/forms/client/services/forms.client.service.js [32m200 [0m2.591 ms - 626[0m
+hi m here also
+http
+10.10.1.245
+/modules/reports/client/config/reports.client.config.js
+undefined
+[0mGET /modules/reports/client/config/reports.client.config.js [32m200 [0m1.751 ms - 475[0m
+hi m here also
+http
+10.10.1.245
+/modules/reports/client/config/reports.client.routes.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/reports/client/controllers/list-reports.client.controller.js
+undefined
+[0mGET /modules/reports/client/config/reports.client.routes.js [32m200 [0m2.510 ms - -[0m
+[0mGET /modules/reports/client/controllers/list-reports.client.controller.js [32m200 [0m2.209 ms - 813[0m
+hi m here also
+http
+10.10.1.245
+/modules/reports/client/controllers/reports.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/reports/client/services/reports.client.service.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/roles/client/config/roles.client.menus.js
+undefined
+[0mGET /modules/reports/client/controllers/reports.client.controller.js [32m200 [0m7.200 ms - -[0m
+[0mGET /modules/reports/client/services/reports.client.service.js [32m200 [0m4.745 ms - 401[0m
+[0mGET /modules/roles/client/config/roles.client.menus.js [32m200 [0m4.376 ms - 504[0m
+hi m here also
+http
+10.10.1.245
+/modules/roles/client/config/roles.client.routes.js
+undefined
+[0mGET /modules/roles/client/config/roles.client.routes.js [32m200 [0m3.512 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/roles/client/controllers/roles.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/roles/client/services/roles.client.service.js
+undefined
+[0mGET /modules/roles/client/services/roles.client.service.js [32m200 [0m2.974 ms - 352[0m
+[0mGET /modules/roles/client/controllers/roles.client.controller.js [32m200 [0m3.193 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/schools/client/config/schools.client.config.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/schools/client/config/schools.client.routes.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/schools/client/controllers/schools.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/schools/client/services/schools.client.service.js
+undefined
+[0mGET /modules/schools/client/services/schools.client.service.js [32m200 [0m5.644 ms - 401[0m
+[0mGET /modules/schools/client/config/schools.client.routes.js [32m200 [0m10.083 ms - -[0m
+[0mGET /modules/schools/client/controllers/schools.client.controller.js [32m200 [0m8.160 ms - -[0m
+[0mGET /modules/schools/client/config/schools.client.config.js [32m200 [0m14.027 ms - 519[0m
+hi m here also
+http
+10.10.1.245
+/modules/students/client/config/students.client.config.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/students/client/config/students.client.routes.js
+undefined
+[0mGET /modules/students/client/config/students.client.config.js [32m200 [0m3.522 ms - 327[0m
+[0mGET /modules/students/client/config/students.client.routes.js [32m200 [0m2.765 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/students/client/controllers/studentForm.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/students/client/controllers/students.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/students/client/services/students.client.service.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/uploads/client/config/uploads.client.config.js
+undefined
+[0mGET /modules/students/client/controllers/studentForm.client.controller.js [32m200 [0m6.947 ms - -[0m
+[0mGET /modules/students/client/services/students.client.service.js [32m200 [0m9.132 ms - 737[0m
+[0mGET /modules/students/client/controllers/students.client.controller.js [32m200 [0m7.299 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/uploads/client/config/uploads.client.routes.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/uploads/client/controllers/uploads.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/uploads/client/services/uploads.client.service.js
+undefined
+[0mGET /modules/uploads/client/config/uploads.client.config.js [32m200 [0m22.923 ms - 1002[0m
+[0mGET /modules/uploads/client/config/uploads.client.routes.js [32m200 [0m12.552 ms - -[0m
+[0mGET /modules/uploads/client/services/uploads.client.service.js [32m200 [0m6.390 ms - 401[0m
+[0mGET /modules/uploads/client/controllers/uploads.client.controller.js [32m200 [0m5.952 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/config/users-admin.client.menus.js
+undefined
+[0mGET /modules/users/client/config/users-admin.client.menus.js [32m200 [0m2.426 ms - 430[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/config/users-admin.client.routes.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/config/users.client.config.js
+undefined
+[0mGET /modules/users/client/config/users-admin.client.routes.js [32m200 [0m3.351 ms - 1006[0m
+[0mGET /modules/users/client/config/users.client.config.js [32m200 [0m3.136 ms - 861[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/config/users.client.routes.js
+undefined
+[0mGET /modules/users/client/config/users.client.routes.js [32m200 [0m2.169 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/admin/list-users.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/admin/user.client.controller.js
+undefined
+[0mGET /modules/users/client/controllers/admin/list-users.client.controller.js [32m200 [0m3.319 ms - 940[0m
+[0mGET /modules/users/client/controllers/admin/user.client.controller.js [32m200 [0m3.048 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/authentication.client.controller.js
+undefined
+[0mGET /modules/users/client/controllers/authentication.client.controller.js [32m200 [0m2.258 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/password.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/settings/change-password.client.controller.js
+undefined
+[0mGET /modules/users/client/controllers/settings/change-password.client.controller.js [32m200 [0m3.887 ms - 973[0m
+[0mGET /modules/users/client/controllers/password.client.controller.js [32m200 [0m3.901 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/settings/change-profile-picture.client.controller.js
+undefined
+[0mGET /modules/users/client/controllers/settings/change-profile-picture.client.controller.js [32m200 [0m2.487 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/settings/edit-profile.client.controller.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/settings/manage-social-accounts.client.controller.js
+undefined
+[0mGET /modules/users/client/controllers/settings/edit-profile.client.controller.js [32m200 [0m2.420 ms - 833[0m
+[0mGET /modules/users/client/controllers/settings/manage-social-accounts.client.controller.js [32m200 [0m2.415 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/controllers/settings/settings.client.controller.js
+undefined
+[0mGET /modules/users/client/controllers/settings/settings.client.controller.js [32m200 [0m2.253 ms - 193[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/directives/password-validator.client.directive.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/directives/password-verify.client.directive.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/directives/users.client.directive.js
+undefined
+[0mGET /modules/users/client/directives/password-verify.client.directive.js [32m200 [0m5.525 ms - 784[0m
+[0mGET /modules/users/client/directives/password-validator.client.directive.js [32m200 [0m5.551 ms - -[0m
+[0mGET /modules/users/client/directives/users.client.directive.js [32m200 [0m2.678 ms - 406[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/services/authentication.client.service.js
+undefined
+[0mGET /modules/users/client/services/authentication.client.service.js [32m200 [0m2.797 ms - 232[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/services/password-validator.client.service.js
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/services/users.client.service.js
+undefined
+[0mGET /modules/users/client/services/password-validator.client.service.js [32m200 [0m3.045 ms - 649[0m
+[0mGET /modules/users/client/services/users.client.service.js [32m200 [0m2.484 ms - 550[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/views/header.client.view.html
+undefined
+[0mGET /modules/core/client/views/header.client.view.html [32m200 [0m4.180 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/views/authentication/authentication.client.view.html
+undefined
+[0mGET /modules/users/client/views/authentication/authentication.client.view.html [32m200 [0m2.585 ms - 129[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/img/brand/logo.png
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/users/client/views/authentication/signin.client.view.html
+undefined
+[0mGET /modules/core/client/img/brand/logo.png [32m200 [0m3.574 ms - 10977[0m
+[0mGET /modules/users/client/views/authentication/signin.client.view.html [32m200 [0m3.553 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/users/client/img/dashboard.png
+undefined
+hi m here also
+http
+10.10.1.245
+/modules/core/client/img/brand/logo.png
+undefined
+[0mGET /modules/core/client/img/brand/logo.png [36m304 [0m3.483 ms - -[0m
+hi m here also
+http
+10.10.1.245
+/modules/core/client/img/brand/logo.png
+undefined
+[0mGET /modules/core/client/img/brand/logo.png [36m304 [0m2.868 ms - -[0m
+[0mGET /modules/users/client/img/dashboard.png [32m200 [0m2.541 ms - 438867[0m
+
++ Error: NODE_ENV is not defined! Using default development environment
+
+--
+Smartdata - Development Environment
+Environment:			development
+Port:				3000
+Database:				mongodb://localhost/smartdata_v1
+App version:			0.4.2
+MEAN.JS version:			0.4.2
+--

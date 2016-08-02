@@ -1,0 +1,76 @@
+<section>
+<!--  form of Form -->
+          <div class="bootstrap-iso">
+           <div class="container-fluid">
+            <div class="row">
+             <div class="col-md-12 col-sm-6 col-xs-12">
+              <form name="vm.formForm" class="form-horizontal" ng-submit="vm.saveForm(vm.formForm.$valid)" novalidate>
+               <div class="form-group " show-errors>
+                <label class="control-label " for="name">Form Name </label>
+                <input name="formName" type="text" ng-model="vm.form.formName" id="formName" class="form-control" placeholder="Enter Form Name" required>
+               </div>
+               <div class="form-group " show-errors>
+                <label class="control-label " for="select"> Select Category </label>
+                <select class="select form-control" id="categories" name="categories" ng-model="vm.form.categoryId" required>
+                  <option ng-repeat="category in vm.allCategories" value="{{category._id}}">{{category.categoryName}}</option>
+                </select>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="formEditor"> Design Form </label>
+                <textarea name="formEditor" id="formEditor" rows="10" cols="80"  >
+                        Design Your Form.
+                </textarea>
+               </div>
+
+               <div class="form-group">
+                <div>
+                  <button type="submit" class="btn btn-primary">{{vm.form._id ? 'Update Form' : 'Generate Form'}}</button>
+                  </div>
+               </div>
+              </form>
+             </div>
+            </div>
+           </div>
+          </div>
+<!-- end of form of Form -->
+<!-- list of Forms -->
+<div class="panel panel-default">
+             <div class="panel-heading"><span class="lead">Forms</span></div>
+             <div class="tablecontainer">
+                 <table class="table table-bordered row-border" datatable="ng">
+                   <thead>
+                     <tr>
+                       <th>Form Name</th>
+                       <th>Category Name</th>
+                       <th width="20%"></th>
+
+                       </tr>
+                   </thead>
+                       <tbody>
+                         <tr ng-repeat="form in vm.allForms"  >
+                             <td><span ng-bind="form.formName"></span></td>
+                             <td><span ng-bind="form.category.categoryName"></span></td>
+                             <td>
+                            <a class="btn btn-primary" ng-click="editForm(form)" >
+                               <i class="glyphicon glyphicon-edit"></i>
+                             </a>
+                             <a class="btn btn-primary-delete"  ng-click="deleteForm(form)">
+                               <i class="glyphicon glyphicon-trash"></i>
+                             </a>
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>
+                       </div>
+                   </div>
+<!-- end of List of forms -->
+
+<!--  <form name="vm.formForm" class="form-horizontal" ng-submit="vm.saveForm()">
+  <div ng-model="vm.form.categoryId" ng-bind="vm.form.categoryId = selectedCat"></div>
+  <input name="formName" type="text" ng-model="vm.form.formName" id="formName"  required>
+  <input name="formContent" type="text" ng-model="vm.form.formContent" id="formContent" >
+  <button type="submit" class="btn btn-default">Create New Form</button>
+</form> -->
+
+
+</section>

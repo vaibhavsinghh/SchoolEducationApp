@@ -1,0 +1,19 @@
+<section>
+<!--  Form of categroy -->
+<div class="page-header">
+</div>
+          <div class="bootstrap-iso">
+           <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-2 col-md-offset-5 col-sm-6 col-xs-12">
+               <div class="form-group ">
+                <select class="select form-control" ng-change="loadDashboard(districtChoosen)" ng-options="district.districtName for district in vm.allDistricts" ng-model="districtChoosen">
+                  <option value="" disabled >Select District</option>
+                </select>
+               </div>
+             </div>
+           </div>
+          </div>
+         </div>
+
+</section>
